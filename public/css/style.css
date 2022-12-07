@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    --main-bg-color: #2874f0;
+  }
+  header{
+    background: var(--main-bg-color); 
+    font-family: 'Lato', sans-serif;
+}
+.my-2{
+    margin: 20px 0;
+}
+.progress{
+    background-color: red;
+    height: 3px;
+    animation: load  1s ease-in-out 1;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes load{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 60vw;
+    }
+    100%{
+        width: 60%;
+    }
+    
+   }
+   .c{
+    font-size: 12px;
+    margin: 10px 0;
+}
+   .text-center{
+    text-align: center;
+   }
+   span{
+    color: green;
+    font-size: 13px;
+   }
+.btn{
+    padding: 5px 10px;
+    color: white;
+    background-color: var(--main-bg-color);
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.text-center-1:hover{
+     color: blue;
+     cursor: pointer;
+
+}
+  *{
+    margin: 0;
+    padding: 0;
+}
+.flex-all-center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+nav{
+display: flex;
+    flex-direction: column;
+}
+.logo{
+    justify-content: center;
+    margin: 12px 0;
+}
+nav ul{
+    justify-content: center;
+    height: 34px ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search input{
+    width: 30vw;
+    height: 27px;
+    border-radius: 5px;
+    padding: 0 12px ;
+    margin: 12px 16px;
+}
+.search button{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+.search button 
+.cards{
+    display: flex; 
+    overflow: hidden;
+
+
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.card{
+    max-width: 92vw;
+margin: 37px auto;
+font-family: 'Ubuntu', sans-serif;
+overflow: hidden;
+}
+.card h2{
+    font-family: 'Lato', sans-serif;  
+}
+.container{
+    min-height: calc(100vh-58px-12vh);
+}

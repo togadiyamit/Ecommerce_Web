@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<meta name="description" content="POS - Bootstrap Admin Template">
+<meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern,  html5, responsive">
+<meta name="author" content="Tic-Tech-Toe">
+<meta name="robots" content="noindex, nofollow">
+<title>Inventory Management</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="images/tic-tech-toe-white.png">
+
+<link rel="stylesheet" href="css/1.css">
+<link rel="stylesheet" href="css/2.css">
+<link rel="stylesheet" href="css/3.css">
+<link rel="stylesheet" href="css/4.css">
+<link rel="stylesheet" href="css/5.css">
+<link rel="stylesheet" href="css/6.css">
+
+</head>
+<body>
+<div id="global-loader">
+<div class="whirly-loader"> </div>
+</div>
+
+<div class="main-wrapper">
+
+<div class="header">
+
+<div class="header-left active">
+<a href="index.html" class="logo">
+<img src="images/TIC-TECH-TOE (1).png" alt="">
+</a>
+<a href="index.html" class="logo-small">
+<img src="images/tic-tech-toe-white.png" alt="">
+</a>
+<a id="toggle_btn" href="javascript:void(0);">
+</a>
+</div>
+
+<a id="mobile_btn" class="mobile_btn" href="#sidebar">
+<span class="bar-icon">
+<span></span>
+<span></span>
+<span></span>
+</span>
+</a>
+
+<ul class="nav user-menu">
+
+<li class="nav-item">
+<div class="top-nav-search">
+<a href="javascript:void(0);" class="responsive-search">
+<i class="fa fa-search"></i>
+</a>
+<form action="#">
+<div class="searchinputs">
+<input type="text" placeholder="Search Here ...">
+<div class="search-addon">
+<span><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/closes.svg" alt="img"></span>
+</div>
+</div>
+<a class="btn" id="searchdiv"><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/search.svg" alt="img"></a>
+</form>
+</div>
+</li>
+
+
+<li class="nav-item dropdown has-arrow flag-nav">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0);" role="button">
+<img src="images/Flag_of_India.svg.webp" alt="" height="20">
+</a>
+</li>
+
+
+
+<li class="nav-item dropdown has-arrow main-drop">
+<a href="javascript:void(0);" class="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
+<span class="user-img"><img src="images/user.png" alt="">
+<span class="status online"></span></span>
+</a>
+<div class="dropdown-menu menu-drop-user">
+<div class="profilename">
+<div class="profileset">
+<span class="user-img"><img src="images/user.png" alt="">
+<span class="status online"></span></span>
+<div class="profilesets">
+<h6>Tic-Tech-Toe</h6>
+<h5>Admin</h5>
+</div>
+</div>
+<hr class="m-0">
+<a class="dropdown-item" href="Pages/profile.html"> <i class="me-2" data-feather="user"></i> My Profile</a>
+<a class="dropdown-item" href="Pages/generalsettings.html"><i class="me-2" data-feather="settings"></i>Settings</a>
+<hr class="m-0">
+<a class="dropdown-item logout pb-0" href="Pages/signin.html"><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/log-out.svg" class="me-2" alt="img">Logout</a>
+</div>
+</div>
+</li>
+</ul>
+
+
+<div class="dropdown mobile-user-menu">
+<a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<a class="dropdown-item" href="Pages/profile.html">My Profile</a>
+<a class="dropdown-item" href="Pages/generalsettings.html">Settings</a>
+<a class="dropdown-item" href="Pages/signin.html">Logout</a>
+</div>
+</div>
+
+</div>
+
+
+<div class="sidebar" id="sidebar">
+<div class="sidebar-inner slimscroll">
+<div id="sidebar-menu" class="sidebar-menu">
+<ul>
+<li class="active">
+<a href="index.html"><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/dashboard.svg" alt="img"><span> Dashboard</span> </a>
+</li>
+<li class="submenu">
+<a href="javascript:void(0);"><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/product.svg" alt="img"><span> Product</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="Pages/productlist.html">Product List</a></li>
+<li><a href="Pages/addproduct.html">Add Product</a></li>
+<li><a href="Pages/categorylist.html">Category List</a></li>
+<li><a href="Pages/addcategory.html">Add Category</a></li>
+<li><a href="Pages/subcategorylist.html">Sub Category List</a></li>
+<li><a href="Pages/subaddcategory.html">Add Sub Category</a></li>
+<!-- <li><a href="https://dreamspos.dreamguystech.com/html/template/brandlist.html">Brand List</a></li>
+<li><a href="https://dreamspos.dreamguystech.com/html/template/addbrand.html">Add Brand</a></li> -->
+
+
+</ul>
+</li>
+<li class="submenu">
+<a href="javascript:void(0);"><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/sales1.svg" alt="img"><span> Sales</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="Pages/pos.html">New Sales</a></li>
+<li><a href="Pages/salesreturnlists.html">Sales Return List</a></li>
+<li><a href="Pages/createsalesreturns.html">New Sales Return</a></li>
+</ul>
+</li>
+<li class="submenu">
+<a href="javascript:void(0);"><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/purchase1.svg" alt="img"><span> Purchase</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="Pages/purchaselist.html">Purchase List</a></li>
+<li><a href="Pages/addpurchase.html">Add Purchase</a></li>
+</ul>
+</li>
+<li class="submenu">
+<a href="javascript:void(0);"><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/transfer1.svg" alt="img"><span> Transfer</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="Pages/transferlist.html">Transfer List</a></li>
+<li><a href="Pages/addtransfer.html">Add Transfer </a></li>
+<!-- <li><a href="https://dreamspos.dreamguystech.com/html/template/importtransfer.html">Import Transfer </a></li> -->
+</ul>
+</li>
+<li class="submenu">
+<a href="javascript:void(0);"><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/return1.svg" alt="img"><span> Return</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="Pages/salesreturnlists.html">Sales Return List</a></li>
+<li><a href="Pages/createsalesreturns.html">Add Sales Return </a></li>
+<li><a href="Pages/purchasereturnlist.html">Purchase Return List</a></li>
+<li><a href="Pages/createpurchasereturn.html">Add Purchase Return </a></li>
+</ul>
+</li>
+<li class="submenu">
+<a href="javascript:void(0);"><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/users1.svg" alt="img"><span> People</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="Pages/customerlist.html">Customer List</a></li>
+<li><a href="Pages/addcustomer.html">Add Customer </a></li>
+<li><a href="Pages/supplierlist.html">Supplier List</a></li>
+<li><a href="Pages/addsupplier.html">Add Supplier </a></li>
+<li><a href="Pages/userlist.html">User List</a></li>
+<li><a href="Pages/adduser.html">Add User</a></li>
+<li><a href="Pages/storelist.html">Store List</a></li>
+<li><a href="Pages/addstore.html">Add Store</a></li>
+</ul>
+</li> 
+<li class="submenu">
+<a href="javascript:void(0);"><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/users1.svg" alt="img"><span> Users</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="Pages/newuser.html">New User </a></li>
+<li><a href="Pages/userlist.html">Users List</a></li>
+</ul>
+</li>
+<li>
+    <a href="Pages/liveTrack.html"><img src="data:image/jpeg;base64,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" alt="img"><span> Tracking</span> </a>
+    </li>
+<li class="submenu">
+<a href="javascript:void(0);"><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/settings.svg" alt="img"><span> Settings</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="Pages/generalsettings.html">General Settings</a></li>
+<li><a href="Pages/grouppermissions.html">Group Permissions</a></li>
+</ul>
+</li>
+<li class="submenu">
+    <a href="javascript:void(0);"><img src="https://w7.pngwing.com/pngs/298/122/png-transparent-left-double-chevron-heroicons-ui-icon-thumbnail.png" alt="img"><span> E-commerce site</span> <span class="menu-arrow"></span></a>
+    <ul>
+        <li><a href="http://localhost:3000">Home page</a></li>
+        <li><a href="http://localhost:3000/admin/add-product">Add Product</a></li>
+
+        </ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="page-wrapper">
+<div class="content">
+<div class="row">
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="dash-widget">
+<div class="dash-widgetimg">
+<span><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/dash1.svg" alt="img"></span>
+</div>
+<div class="dash-widgetcontent">
+<h5>Rs.<span class="counters" data-count="307144.00">Rs.307,144.00</span></h5>
+<h6>Total Purchase Due</h6>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="dash-widget dash1">
+<div class="dash-widgetimg">
+<span><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/dash2.svg" alt="img"></span>
+</div>
+<div class="dash-widgetcontent">
+<h5>Rs.<span class="counters" data-count="4385.00">Rs.4,385.00</span></h5>
+<h6>Total Sales Due</h6>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="dash-widget dash2">
+<div class="dash-widgetimg">
+<span><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/dash3.svg" alt="img"></span>
+</div>
+<div class="dash-widgetcontent">
+<h5>Rs.<span class="counters" data-count="385656.50">385,656.50</span></h5>
+<h6>Total Sale Amount</h6>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="dash-widget dash3">
+<div class="dash-widgetimg">
+<span><img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/dash4.svg" alt="img"></span>
+</div>
+<div class="dash-widgetcontent">
+<h5>Rs.<span class="counters" data-count="40000.00">400.00</span></h5>
+<h6>Total Sale Amount</h6>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-12 d-flex">
+<div class="dash-count">
+<div class="dash-counts">
+<h4><div class="counter-value1">0</div></h4>
+<h5>TO BE PACKED</h5>
+<button style="font-weight: bolder; border-radius: 10px;" data-action="increase1">
+    <span>Add</span>
+</button>
+
+    <button style="font-weight: bolder; border-radius: 10px;"data-action="save1">
+        <span>Save</span>
+    </button>
+</div>
+<div class="dash-imgs">
+<i data-feather="user"></i>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-12 d-flex">
+<div class="dash-count das1">
+<div class="dash-counts">
+<h4><div class="counter-value2">0</div></h4>
+
+<h5>TO BE SHIPPED</h5>
+
+<button style="font-weight: bolder; border-radius: 10px;" data-action="increase2">
+    <span>Add</span>
+</button>
+
+    <button style="font-weight: bolder; border-radius: 10px;"data-action="save2">
+        <span>Save</span>
+    </button>
+</div>
+<div class="dash-imgs">
+<i data-feather="user-check"></i>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-12 d-flex">
+<div class="dash-count das2">
+<div class="dash-counts">
+    <h4><div class="counter-value3">0</div></h4>
+<h5>TO BE DELIVERED</h5>
+<button style="font-weight: bolder; border-radius: 10px;" data-action="increase3">
+    <span>Add</span>
+</button>
+
+    <button style="font-weight: bolder; border-radius: 10px;"data-action="save3">
+        <span>Save</span>
+    </button>
+</div>
+<div class="dash-imgs">
+<i data-feather="file-text"></i>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-12 d-flex">
+<div class="dash-count das3">
+<div class="dash-counts">
+    <h4><div class="counter-value4">0</div></h4>
+<h5>TO BE INVOICED</h5>
+<button style="font-weight: bolder; border-radius: 10px;" data-action="increase4">
+    <span>Add</span>
+</button>
+
+    <button style="font-weight: bolder; border-radius: 10px;"data-action="save4">
+        <span>Save</span>
+    </button>
+</div>
+<div class="dash-imgs">
+<i data-feather="file"></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-7 col-sm-12 col-12 d-flex">
+<div class="card flex-fill">
+<div class="card-header pb-0 d-flex justify-content-between align-items-center">
+<h5 class="card-title mb-0">Purchase & Sales</h5>
+<div class="graph-sets">
+<ul>
+<li>
+<span>Sales</span>
+</li>
+<li>
+<span>Purchase</span>
+</li>
+</ul>
+<div class="dropdown">
+<button class="btn btn-white btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+ 2022 <img src="https://dreamspos.dreamguystech.com/html/template/assets/img/icons/dropdown.svg" alt="img" class="ms-2">
+</button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+<li>
+<a href="javascript:void(0);" class="dropdown-item">2022</a>
+</li>
+<li>
+<a href="javascript:void(0);" class="dropdown-item">2021</a>
+</li>
+<li>
+<a href="javascript:void(0);" class="dropdown-item">2020</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div id="sales_charts"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-5 col-sm-12 col-12 d-flex">
+<div class="card flex-fill">
+<div class="card-header pb-0 d-flex justify-content-between align-items-center">
+<h4 class="card-title mb-0">Recently Added Products</h4>
+<div class="dropdown">
+<a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" class="dropset">
+<i class="fa fa-ellipsis-v"></i>
+</a>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+<li>
+<a href="Pages/productlist.html" class="dropdown-item">Product List</a>
+</li>
+<li>
+<a href="Pages/addproduct.html" class="dropdown-item">Product Add</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="card-body">
+<div class="table-responsive dataview">
+<table class="table datatable ">
+<thead>
+<tr>
+<th>SNo</th>
+<th>Products</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td class="productimgname">
+<a href="Pages/productlist.html" class="product-img">
+<img src="https://dreamspos.dreamguystech.com/html/template/assets/img/product/product22.jpg" alt="product">
+</a>
+<a href="Pages/productlist.html">Apple Earpods</a>
+</td>
+<td>Rs.891.2</td>
+</tr>
+<tr>
+<td>2</td>
+<td class="productimgname">
+<a href="Pages/productlist.html" class="product-img">
+<img src="https://dreamspos.dreamguystech.com/html/template/assets/img/product/product23.jpg" alt="product">
+</a>
+<a href="Pages/productlist.html">iPhone 11</a>
+</td>
+<td>Rs.668.51</td>
+</tr>
+<tr>
+<td>3</td>
+<td class="productimgname">
+<a href="Pages/productlist.html" class="product-img">
+<img src="https://dreamspos.dreamguystech.com/html/template/assets/img/product/product24.jpg" alt="product">
+</a>
+<a href="Pages/productlist.html">samsung</a>
+</td>
+<td>Rs.522.29</td>
+</tr>
+<tr>
+<td>4</td>
+<td class="productimgname">
+<a href="Pages/productlist.html" class="product-img">
+<img src="https://dreamspos.dreamguystech.com/html/template/assets/img/product/product6.jpg" alt="product">
+</a>
+<a href="Pages/productlist.html">Macbook Pro</a>
+</td>
+<td>Rs.291.01</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card mb-0">
+<div class="card-body">
+<h4 class="card-title">Expired Products</h4>
+<div class="table-responsive dataview">
+<table class="table datatable ">
+<thead>
+<tr>
+<th>SNo</th>
+<th>Product Code</th>
+<th>Product Name</th>
+<th>Brand Name</th>
+<th>Category Name</th>
+<th>Expiry Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="javascript:void(0);">IT0001</a></td>
+<td class="productimgname">
+<a class="product-img" href="Pages/productlist.html">
+<img src="https://dreamspos.dreamguystech.com/html/template/assets/img/product/product2.jpg" alt="product">
+</a>
+<a href="Pages/productlist.html">Orange</a>
+</td>
+<td>N/D</td>
+<td>Fruits</td>
+<td>12-12-2022</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="javascript:void(0);">IT0002</a></td>
+<td class="productimgname">
+<a class="product-img" href="Pages/productlist.html">
+<img src="https://dreamspos.dreamguystech.com/html/template/assets/img/product/product3.jpg" alt="product">
+</a>
+<a href="Pages/productlist.html">Pineapple</a>
+</td>
+<td>N/D</td>
+<td>Fruits</td>
+<td>25-11-2022</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="javascript:void(0);">IT0003</a></td>
+<td class="productimgname">
+<a class="product-img" href="Pages/productlist.html">
+<img src="https://dreamspos.dreamguystech.com/html/template/assets/img/product/product4.jpg" alt="product">
+</a>
+<a href="Pages/productlist.html">Stawberry</a>
+</td>
+<td>N/D</td>
+<td>Fruits</td>
+<td>19-11-2022</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="javascript:void(0);">IT0004</a></td>
+<td class="productimgname">
+<a class="product-img" href="Pages/productlist.html">
+<img src="https://dreamspos.dreamguystech.com/html/template/assets/img/product/product5.jpg" alt="product">
+</a>
+<a href="Pages/productlist.html">Avocat</a>
+</td>
+<td>N/D</td>
+<td>Fruits</td>
+<td>20-11-2022</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="main.js"></script>
+<script src="main1.js"></script>
+<script src="main2.js"></script>
+<script src="main3.js"></script>
+
+
+<script src="https://dreamspos.dreamguystech.com/html/template/assets/js/jquery-3.6.0.min.js"></script>
+
+<script src="https://dreamspos.dreamguystech.com/html/template/assets/js/feather.min.js"></script>
+
+<script src="https://dreamspos.dreamguystech.com/html/template/assets/js/jquery.slimscroll.min.js"></script>
+
+<script src="https://dreamspos.dreamguystech.com/html/template/assets/js/jquery.dataTables.min.js"></script>
+<script src="https://dreamspos.dreamguystech.com/html/template/assets/js/dataTables.bootstrap4.min.js"></script>
+
+<script src="https://dreamspos.dreamguystech.com/html/template/assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://dreamspos.dreamguystech.com/html/template/assets/plugins/apexchart/apexcharts.min.js"></script>
+<script src="https://dreamspos.dreamguystech.com/html/template/assets/plugins/apexchart/chart-data.js"></script>
+
+<script src="https://dreamspos.dreamguystech.com/html/template/assets/js/script.js"></script>
+</body>
+</html>

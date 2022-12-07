@@ -6,7 +6,7 @@ const PDFDocument = require('pdfkit');
 const Product = require('../models/product');
 const Order = require('../models/order');
 
-const ITEMS_PER_PAGE = 2;
+const ITEMS_PER_PAGE = 3;
 
 exports.getProducts = (req, res, next) => {
   const page = +req.query.page || 1;
@@ -40,6 +40,8 @@ exports.getProducts = (req, res, next) => {
     });
 };
 
+
+
 exports.getProduct = (req, res, next) => {
   const prodId = req.params.productId;
   Product.findById(prodId)
@@ -57,6 +59,44 @@ exports.getProduct = (req, res, next) => {
     });
 };
 
+
+exports.getnew = (req, res, next) => {
+  req.user
+  .then(user => {
+    const products = user.cart.items;
+    res.render('/template/index', {
+      path: '/index',
+      pageTitle: 'Refurbrished',
+      products: products
+    });
+  })
+  .catch(err => {
+    const error = new Error(err);
+    error.httpStatusCode = 500;
+    return next(error);
+  });
+};
+
+exports.postnew = (req,res,next) => {
+   res.redirect('/template/index')
+}
+
+exports.getrefer = (req, res, next) => {
+  req.user
+    .then(user => {
+      const products = user.cart.items;
+      res.render('shop/refurbrished', {
+        path: '/refurbrished',
+        pageTitle: 'Refurbrished',
+        products: products
+      });
+    })
+    .catch(err => {
+      const error = new Error(err);
+      error.httpStatusCode = 500;
+      return next(error);
+    });
+};
 exports.getIndex = (req, res, next) => {
   const page = +req.query.page || 1;
   let totalItems;

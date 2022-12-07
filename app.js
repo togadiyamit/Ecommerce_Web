@@ -57,6 +57,7 @@ const fileFilter = (req, file, cb) => {
 };
 
 app.set('view engine', 'ejs');
+
 app.set('views', 'views');
 
 const adminRoutes = require('./routes/admin');
@@ -70,13 +71,14 @@ const accessLogStream = fs.createWriteStream(path.join(__dirname,'access.log'),
 app.use(helmet());
 app.use(compression());
 app.use(morgan('combined',{stream: accessLogStream}));
+app.use(express.static(path.join(__dirname + '/public')));
+app.use('/template', express.static(path.join(__dirname, 'template')));
 
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(
   multer({ storage: fileStorage, fileFilter: fileFilter }).single('image')
 );
-app.use(express.static(path.join(__dirname, 'public')));
 app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use(
   session({
@@ -113,6 +115,11 @@ app.use((req, res, next) => {
 });
 
 app.post('/create-order', isAuth, shopController.postOrder);
+app.post('shop/orders', function (req, res) {
+  // Do the task with the form data submitted
+  // Redirect to form2/file 2
+  res.redirect('shop/template/index.html');
+})
 
 app.use(csrfProtection);
 app.use((req, res, next) => {
@@ -125,6 +132,8 @@ app.use(shopRoutes);
 app.use(authRoutes);
 
 app.get('/500', errorController.get500);
+
+
 
 app.use(errorController.get404);
 

@@ -1,6 +1,9 @@
 <%- include('../includes/head.ejs') %>
     <link rel="stylesheet" href="/css/orders.css">
-    </head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <link href=”https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel=”stylesheet”>
+    <link href=”https://fonts.googleapis.com/icon?family=Material+Icons" rel=”stylesheet”>    
+</head>
 
     <body>
         <%- include('../includes/navigation.ejs') %>
@@ -17,9 +20,11 @@
                                     <li class="orders__products-item"><%= p.product.title %> (<%= p.quantity %>)</li>
                                 <% }); %>
                             </ul>
-                        </li>
                     <% }); %>
                 </ul>
             <% } %>
+            <%- include('../includes/footer.ejs') %>
+           
+<script src="inc.js"></script>
         </main>
         <%- include('../includes/end.ejs') %>

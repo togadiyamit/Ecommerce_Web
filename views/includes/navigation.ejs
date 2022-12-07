@@ -1,3 +1,32 @@
+<head>
+    <style>
+        nav ul li a{
+            display: block;
+            padding: 0 10px;
+            color: white;
+            text-decoration: none;
+            line-height: 60px;
+        }
+        
+        nav ul ul{
+            top:60px;
+            display:none;
+        }
+        nav ul li:hover > ul{
+            display: block;
+        }
+        nav ul ul li{
+            width: 150px;
+            float: none;
+            color: white;
+            background-color: #1b2850;
+            display: block;
+            position: relative;
+        }
+    
+    
+    </style>
+</head>
 <div class="backdrop"></div>
 <header class="main-header">
     <button id="side-menu-toggle">Menu</button>
@@ -9,6 +38,15 @@
             <li class="main-header__item">
                 <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a>
             </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/products' ? 'active' : '' %>" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="/products">Products</a>
+                <ul>
+                    <li><a class="<%= path === '/products' ? 'active' : '' %>" href="/refurbrished">Refurbrished Products</a></li>
+                </ul>
+            </li>
+
+            
+
             <% if (isAuthenticated) { %>
                 <li class="main-header__item">
                     <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
@@ -23,6 +61,12 @@
                 <li class="main-header__item">
                     <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products
                     </a>
+                </li>
+                <li>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-warning" type="submit" style="background-color: yellow;">Search</button>
+                      </form>
                 </li>
             <% } %>
         </ul>
@@ -70,6 +114,7 @@
                 </a>
             </li>
         <% } %>
+  
         <% if (!isAuthenticated) { %>
             <li class="mobile-nav__item">
                 <a class="<%= path === '/login' ? 'active' : '' %>" href="/login">Login</a>
@@ -86,4 +131,5 @@
             </li>
         <% } %>
     </ul>
+  
 </nav>

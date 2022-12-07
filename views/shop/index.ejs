@@ -1,11 +1,16 @@
 <%- include('../includes/head.ejs') %>
     <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    
 </head>
 
 <body>
     <%- include('../includes/navigation.ejs') %>
 
     <main>
+    <%- include('../includes/slider.ejs') %>
+
         <% if (prods.length > 0) { %>
             <div class="grid">
                 <% for (let product of prods) { %>
@@ -30,8 +35,9 @@
                     </article>
                 <% } %>
             </div>
-            <%- include('../includes/pagination.ejs', {currentPage: currentPage, nextPage: nextPage, previousPage: previousPage, lastPage: lastPage, hasNextPage: hasNextPage, hasPreviousPage: hasPreviousPage}) %>
-        <% } else { %>
+         <%- include('../includes/pagination.ejs', {currentPage: currentPage, nextPage: nextPage, previousPage: previousPage, lastPage: lastPage, hasNextPage: hasNextPage, hasPreviousPage: hasPreviousPage}) %>
+         <%- include('../includes/footer.ejs') %>
+         <% } else { %>
             <h1>No Products Found!</h1>
         <% } %>
     </main>
